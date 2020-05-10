@@ -3,7 +3,6 @@
 
 A, B, C, X, Y = map(int, input().split())
 
-
 INF = float('inf')
 min_cost = INF
 
