@@ -1,5 +1,5 @@
 # https://atcoder.jp/contests/sumitrust2019/custom_test
-# brute-force, computational complexity O(k^2) - 2 slices nested
+# brute-force, computational complexity O(k^2) because 2 slices are nested
 
 N = int(input())
 S = input()

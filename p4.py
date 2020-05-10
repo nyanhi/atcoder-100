@@ -1,5 +1,5 @@
 # https://atcoder.jp/contests/pakencamp-2019-day3/tasks/pakencamp_2019_day3_c
-# brute-force, computational complexity O(
+# brute-force, computational complexity O(N*M^2)
 
 N, M = map(int, input().split())
 A = []
