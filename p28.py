@@ -1,6 +1,6 @@
 # http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_11_C&lang=ja
-# 有向グラフの頂点の最小距離をBFSで求める
-# 計算量は、状態数N, 遷移の仕方 max_k
+# 重みなしグラフの頂点の最短経路をBFSで求める
+# 計算量は、状態数N, 遷移の仕方kに対して O(N * k)
 
 from collections import deque
 
@@ -8,8 +8,8 @@ from collections import deque
 n = int(input())
 G = [input().split()[2:] for _ in range(n)]
 
-# 各頂点への距離を-1 (頂点1からたどり着けない)で初期化する
-d = [0] + [-1] * n
+# 頂点1から各頂点への距離を-1 (頂点1からたどり着けない)で初期化する
+d = [-1] * n
 
 que = deque()  # 訪問予定の頂点を格納する
 
@@ -29,6 +29,3 @@ while que:
 
 for i in range(n):
     print(i+1, d[i])
-
-if __name__ == '__main__':
-    print()
