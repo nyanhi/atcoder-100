@@ -32,5 +32,3 @@ if 0 < crit_p <= P:
 else:
     print(func(0))
 
-if __name__ == '__main__':
-    print(func(crit_p))
